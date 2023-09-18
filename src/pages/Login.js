@@ -14,16 +14,24 @@ function Login() {
     const txt = e.target.value;
     setUserPassword(txt);
   };
-  const sendForm = () => {};
+  const sendForm = (e) => {
+    e.preventDefault();
+    console.log(
+      `
+      Username : ${userName}
+      Password : ${userPassword}
+      `
+    );
+    setUsername("")
+    setUserPassword("")
+  };
 
   return (
     <div className="container">
       <form className="login-form" onSubmit={sendForm}>
         <h3>เข้าสู่ระบบสมาชิก</h3>
         <div className="form-control">
-          <label>
-            ชื่อสมาชิก
-          </label>
+          <label>ชื่อสมาชิก</label>
           <input
             type="text"
             placeholder=""

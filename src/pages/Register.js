@@ -27,6 +27,22 @@ function Register() {
     setUserPasswordConfirm(txt);
   };
 
+  const sendForm = (e) => {
+    e.preventDefault();
+    console.log(
+      `
+      Email : ${userEmail}
+      Username : ${userName}
+      Password : ${userPassword}
+      Password2 : ${userPasswordConfirm}
+      `
+    );
+    setUserEmail("")
+    setUsername("")
+    setUserPassword("")
+    setUserPasswordConfirm("")
+  };
+
   useEffect(() => {
     if (userName !== "") {
       if (userName.length <= 8) {
@@ -39,7 +55,7 @@ function Register() {
 
   return (
     <div className="container">
-      <form className="login-form">
+      <form className="login-form" onSubmit={sendForm}>
         <h3>สมัครสมาชิก</h3>
         <div className="form-control">
           <label>อีเมลสมาชิก</label>
