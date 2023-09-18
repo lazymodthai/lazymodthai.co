@@ -1,8 +1,9 @@
 import React from 'react'
+import '../css/Donation.css'
 
 function Donation() {
   return (
-    <div>Donation</div>
+    <div className='donate-container'>Donation</div>
   )
 }
 
