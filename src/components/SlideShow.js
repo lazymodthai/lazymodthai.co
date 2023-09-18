@@ -1,4 +1,5 @@
 import React from "react";
+import '../css/SlideShow.css'
 
 function SlideShow() {
   return (
