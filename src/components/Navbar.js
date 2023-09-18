@@ -1,6 +1,6 @@
 import React from "react";
 import Logo from "./Logo"
-import "./Navbar.css";
+import "../css/Navbar.css";
 import NavItem from "./NavItem";
 
 function Navbar() {
