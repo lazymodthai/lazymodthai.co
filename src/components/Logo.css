@@ -1,0 +1,17 @@
+.logo-container{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.img-logo{
+    box-sizing: border-box;
+    max-height: 50px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+.logo-name{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-left: 5px;
+    color: aliceblue;
+}
