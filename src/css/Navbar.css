@@ -7,3 +7,4 @@
     justify-content: space-between;
     margin-bottom: 15px;
 }
+@media only screen and (max-width: 655px) {}

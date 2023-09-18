@@ -1,35 +1,92 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "../css/Form.css";
 import { NavLink } from "react-router-dom";
 
 function Register() {
+  const [userEmail, setUserEmail] = useState("");
+  const [userName, setUsername] = useState("");
+  const [userPassword, setUserPassword] = useState("");
+  const [userPasswordConfirm, setUserPasswordConfirm] = useState("");
+
+  const [userCheck, setUserCheck] = useState("");
+
+  const userEmailHandler = (e) => {
+    const txt = e.target.value;
+    setUserEmail(txt);
+  };
+  const userNameHandler = (e) => {
+    const txt = e.target.value;
+    setUsername(txt);
+  };
+  const userPasswordHandler = (e) => {
+    const txt = e.target.value;
+    setUserPassword(txt);
+  };
+  const userPasswordConfirmHandler = (e) => {
+    const txt = e.target.value;
+    setUserPasswordConfirm(txt);
+  };
+
+  useEffect(() => {
+    if (userName !== "") {
+      if (userName.length <= 8) {
+        setUserCheck("ต้องมีมากกว่า 8 ตัวอักษร");
+      } else if (!userName.match(/^[a-z0-9_.,'"!?;:& ]+$/i)) {
+        setUserCheck("ต้องเป็นภาษาอังกฤษ/ตัวเลข/อักขระ");
+      } else setUserCheck("");
+    } else setUserCheck("");
+  }, [userName]);
+
   return (
     <div className="container">
-
       <form className="login-form">
-      <h3>สมัครสมาชิก</h3>
-      <div className="form-control">
+        <h3>สมัครสมาชิก</h3>
+        <div className="form-control">
           <label>อีเมลสมาชิก</label>
-          <input type="email" placeholder="" />
+          <input
+            type="email"
+            placeholder=""
+            value={userEmail}
+            onChange={userEmailHandler}
+          />
         </div>
         <div className="form-control">
-          <label>ตั้งชื่อสมาชิก</label>
-          <input type="text" placeholder="" />
+          <label>
+            ตั้งชื่อสมาชิก <span className="check">{userCheck}</span>
+          </label>
+          <input
+            type="text"
+            placeholder=""
+            value={userName}
+            onChange={userNameHandler}
+          />
         </div>
         <div className="form-control">
           <label>ตั้งรหัสผ่าน</label>
-          <input type="password" placeholder="" />
+          <input
+            type="password"
+            placeholder=""
+            value={userPassword}
+            onChange={userPasswordHandler}
+          />
         </div>
         <div className="form-control">
           <label>ใส่รหัสผ่านอีกครั้ง</label>
-          <input type="password" placeholder="" />
+          <input
+            type="password"
+            placeholder=""
+            value={userPasswordConfirm}
+            onChange={userPasswordConfirmHandler}
+          />
         </div>
         <div className="form-control">
           <button type="submit" className="btn-login">
             สมัครสมาชิก
           </button>
         </div>
-        <div className="register"><NavLink to="/login">เข้าสู่ระบบหากเป็นสมาชิกอยู่แล้ว</NavLink></div>
+        <div className="register">
+          <NavLink to="/login">เข้าสู่ระบบหากเป็นสมาชิกอยู่แล้ว</NavLink>
+        </div>
       </form>
     </div>
   );
