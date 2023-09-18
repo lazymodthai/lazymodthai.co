@@ -19,8 +19,8 @@
     margin: auto;
     font-size: 1.5em;
     width: 600px;
-    background: rgb(121,9,120);
-background: linear-gradient(315deg, rgba(121,9,120,0.8) 0%, rgba(255,0,0,0.8) 100%);
+    background: rgb(121, 9, 120);
+    background: linear-gradient(315deg, rgba(121, 9, 120, 0.8) 0%, rgba(255, 0, 0, 0.8) 100%);
     padding: 50px 50px;
     border-radius: 20px;
 }
@@ -66,19 +66,22 @@ background: linear-gradient(315deg, rgba(121,9,120,0.8) 0%, rgba(255,0,0,0.8) 10
 .register a:hover {
     text-decoration: underline;
 }
-.check{
+
+.check {
     color: rgb(255, 232, 104);
     font-size: 0.75em;
 }
 
 @media only screen and (max-width: 655px) {
     .login-form {
-      width: 90%;
+        width: 90%;
     }
+
     .form-control {
         width: 100%;
     }
+
     .container {
         background-repeat: repeat-x;
-  }
+    }
 }
