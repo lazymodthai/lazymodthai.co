@@ -1,7 +1,9 @@
 .nav-container{
     display: flex;
-    align-items: center;
-    padding: 10px;
-    background-color: cadetblue;
+    position: fixed;
+    width: 100%;
+    padding: 0 20px;
+    background-color: rgb(70, 0, 94);
+    justify-content: space-between;
     margin-bottom: 15px;
 }
