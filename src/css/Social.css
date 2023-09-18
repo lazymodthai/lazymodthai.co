@@ -1,0 +1,14 @@
+.social-container{
+    display: flex;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    margin: auto;
+    background-color: rgb(75, 0, 85);
+    justify-content: center;
+}
+.icon{
+    font-size: 2em;
+    margin: 10px 20px 5px 20px;
+    color: white;
+}
