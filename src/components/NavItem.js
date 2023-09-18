@@ -15,7 +15,7 @@ function NavItem() {
     }]
   return (
       <ul className="nav-item">
-        {link.map((link)=><li key={link.page}><NavLink to={link.href} className="nav-item-item">{link.page}</NavLink></li>)}
+        {link.map((link)=><li key={link.page}><NavLink to={link.href}>{link.page}</NavLink></li>)}
       </ul>
   );
 }
