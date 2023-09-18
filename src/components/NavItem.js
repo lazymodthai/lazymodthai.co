@@ -1,5 +1,6 @@
 import React from "react";
 import './NavItem.css'
+import { NavLink } from "react-router-dom";
 
 function NavItem() {
     const link = [{
@@ -7,14 +8,14 @@ function NavItem() {
         href: "/"
     },{
         page: "โดเนท",
-        href: "donate"
+        href: "/Donation"
     },{
         page: "เข้าสู่ระบบ",
-        href: "login"
+        href: "/Login"
     }]
   return (
       <ul className="nav-item">
-        {link.map((i)=><li>{i.page}</li>)}
+        {link.map((link)=><li key={link.page}><NavLink to={link.href} className="nav-item-item">{link.page}</NavLink></li>)}
       </ul>
   );
 }

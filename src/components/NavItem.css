@@ -1,8 +1,10 @@
 ul{
     padding: 0;
     margin: 0;
+    display: flex;
+    list-style: none;
 }
-ul li{
+ul li a{
     display: inline-block;
     cursor: pointer;
     text-decoration: none;
@@ -12,6 +14,6 @@ ul li{
     border-bottom: 4px solid transparent;
     transition: all ease 0.8s;
 }
-ul li:hover{
+ul li a:hover{
     border-bottom: 4px solid white;
 }
