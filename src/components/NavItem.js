@@ -14,8 +14,7 @@ function NavItem() {
     }]
   return (
       <ul className="nav-item">
-        <li>โดเนท</li>
-        <li>เข้าสู่ระบบ</li>
+        {link.map((i)=><li>{i.page}</li>)}
       </ul>
   );
 }
