@@ -4,7 +4,7 @@
     position: fixed;
     bottom: 0;
     margin: auto;
-    background-color: rgb(75, 0, 85);
+    background-color: rgba(0, 0, 0, 0.258);
     justify-content: center;
 }
 .icon{

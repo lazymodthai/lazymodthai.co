@@ -46,6 +46,7 @@ function Register() {
     setUsername("");
     setUserPassword("");
     setUserPasswordConfirm("");
+    setPdpa(false)
   };
 
   useEffect(() => {

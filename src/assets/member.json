@@ -1,0 +1,15 @@
+{
+    "id": "key",
+    "username": "required",
+    "password": "required hash",
+    "email": "required",
+    "social": {
+        "facebook": "",
+        "discord": "",
+        "website": ""
+    },
+    "modder": false,
+    "modder_id": "fkey",
+    "image": "",
+    "last_login": ""
+}

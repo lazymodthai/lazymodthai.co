@@ -1,0 +1,24 @@
+{
+    "modder_id": "key",
+    "mod_name": "required",
+    "mod_version": "",
+    "game_name": "required",
+    "game_link": "",
+    "mod_status": "0-100% required",
+    "last_update": "",
+    "download_link": [
+        "link1",
+        "link2",
+        "link3"
+    ],
+    "mod_mages": [
+        "img1",
+        "img2",
+        "img3"
+    ],
+    "tag": [
+        "tag1",
+        "tag2",
+        "tag3"
+    ]
+}
