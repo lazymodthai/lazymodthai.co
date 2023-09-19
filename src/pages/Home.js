@@ -1,11 +1,11 @@
 import React from 'react'
-import SlideShow from '../components/SlideShow'
+import Carousel from '../components/Carousel'
 import '../css/Home.css'
 
 
 function Home() {
   return (
-    <div className='home-container'><SlideShow /></div>
+    <div className='home-container'><Carousel /></div>
   )
 }
 

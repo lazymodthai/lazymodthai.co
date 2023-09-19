@@ -3,22 +3,38 @@
     "mod_name": "required",
     "mod_version": "",
     "game_name": "required",
-    "game_link": "",
+    "game_link": {
+        "steam": "",
+        "epic": "",
+        "gog": "",
+        "xbox": ""
+    },
     "mod_status": "0-100% required",
     "last_update": "",
-    "download_link": [
-        "link1",
-        "link2",
-        "link3"
-    ],
+    "download_link": {
+        "steam1" : "",
+        "steam2" : "",
+        "epic1" : "",
+        "epic2" : "",
+        "gog1" : "",
+        "gog2" : "",
+        "xbox1" : "",
+        "xbox2" : ""
+    },
     "mod_mages": [
         "img1",
         "img2",
-        "img3"
+        "img3",
+        "img4",
+        "img5",
+        "img6"
     ],
     "tag": [
         "tag1",
         "tag2",
-        "tag3"
+        "tag3",
+        "tag4",
+        "tag5",
+        "tag6"
     ]
 }

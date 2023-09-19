@@ -1,7 +1,7 @@
 import React from "react";
-import '../css/SlideShow.css'
+import '../css/Carousel.css'
 
-function SlideShow() {
+function Carousel() {
   return (
     <div>
       <h1>SlideShow</h1>
@@ -15,4 +15,4 @@ function SlideShow() {
   );
 }
 
-export default SlideShow;
+export default Carousel;
