@@ -7,6 +7,7 @@ function Register() {
   const [userName, setUsername] = useState("");
   const [userPassword, setUserPassword] = useState("");
   const [userPasswordConfirm, setUserPasswordConfirm] = useState("");
+  const [pdpa, setPdpa] = useState(false);
 
   const [userCheck, setUserCheck] = useState("");
 
@@ -26,6 +27,9 @@ function Register() {
     const txt = e.target.value;
     setUserPasswordConfirm(txt);
   };
+  const pdpaCheck = () => {
+    setPdpa(!pdpa);
+  };
 
   const sendForm = (e) => {
     e.preventDefault();
@@ -35,12 +39,13 @@ function Register() {
       Username : ${userName}
       Password : ${userPassword}
       Password2 : ${userPasswordConfirm}
+      PDPA : ${pdpa}
       `
     );
-    setUserEmail("")
-    setUsername("")
-    setUserPassword("")
-    setUserPasswordConfirm("")
+    setUserEmail("");
+    setUsername("");
+    setUserPassword("");
+    setUserPasswordConfirm("");
   };
 
   useEffect(() => {
@@ -94,6 +99,12 @@ function Register() {
             value={userPasswordConfirm}
             onChange={userPasswordConfirmHandler}
           />
+        </div>
+        <div className="form-control checkbox">
+          <input type="checkbox" onChange={pdpaCheck} checked={pdpa} />{" "}
+          <span>
+            ได้อ่านและยอมรับ<NavLink to="/">เงื่อนไขการเก็บข้อมูล</NavLink>
+          </span>
         </div>
         <div className="form-control">
           <button type="submit" className="btn-login">
