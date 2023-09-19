@@ -1,7 +1,10 @@
 import React from "react";
-import '../css/Carousel.css'
+import '../css/TopCarousel.css'
+import Carousel from "react-multi-carousel";
+// import "react-multi-carousel/lib/styles.css";
 
-function Carousel() {
+
+function TopCarousel() {
   return (
     <div>
       <h1>SlideShow</h1>
@@ -15,4 +18,4 @@ function Carousel() {
   );
 }
 
-export default Carousel;
+export default TopCarousel;

@@ -1,16 +1,18 @@
 {
-    "id": "key",
-    "username": "required",
-    "password": "required hash",
-    "email": "required",
+    "username": "test",
+    "password": "test",
+    "email": "test@test.com",
     "social": {
-        "facebook": "",
-        "discord": "",
-        "website": ""
+        "facebook": "test",
+        "discord": "test",
+        "website": "test"
     },
     "modder": false,
-    "modder_id": "fkey",
-    "modder_name" : "",
-    "image": "",
-    "last_login": ""
+    "modder_id": "1",
+    "modder_name" : "test",
+    "image": "test",
+    "last_login": "2023-09-19",
+    "add_date" : "2023-09-19",
+    "deleted_date" : "2023-09-19",
+    "last_update" : "2023-09-19"
 }

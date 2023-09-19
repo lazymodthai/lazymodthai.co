@@ -1,40 +1,40 @@
 {
-    "modder_id": "key",
-    "mod_name": "required",
-    "mod_version": "",
-    "game_name": "required",
+    "modder_id": "1",
+    "mod_name": "test",
+    "mod_version": "1.0.0",
+    "game_name": "test",
     "game_link": {
-        "steam": "",
-        "epic": "",
-        "gog": "",
-        "xbox": ""
+        "steam": "test",
+        "epic": "test",
+        "xbox": "test",
+        "gog": "test"
     },
-    "mod_status": "0-100% required",
+    "mod_status": "0",
     "last_update": "",
     "download_link": {
-        "steam1" : "",
-        "steam2" : "",
-        "epic1" : "",
-        "epic2" : "",
-        "gog1" : "",
-        "gog2" : "",
-        "xbox1" : "",
-        "xbox2" : ""
+        "steam1": "test",
+        "steam2": "test",
+        "epic1": "test",
+        "epic2": "test",
+        "xbox1": "test",
+        "xbox2": "test",
+        "gog1": "test",
+        "gog2": "test"
     },
-    "mod_mages": [
-        "img1",
-        "img2",
-        "img3",
-        "img4",
-        "img5",
-        "img6"
+    "mod_images": [
+        "test",
+        "test",
+        "test",
+        "test",
+        "test",
+        "test"
     ],
     "tag": [
-        "tag1",
-        "tag2",
-        "tag3",
-        "tag4",
-        "tag5",
-        "tag6"
-    ]
+        "test",
+        "test"
+    ],
+    "stats": {
+        "views": "0",
+        "download": "0"
+    }
 }
