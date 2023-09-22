@@ -86,7 +86,7 @@
     font-size: 0.75em;
 }
 
-@media only screen and (max-width: 655px) {
+@media only screen and (max-width: 640px) {
     h3 {
         margin: 0;
         padding: 0;

@@ -7,17 +7,20 @@
     justify-content: center;
     border-radius: 20px;
 }
-.carousel-item img{
+
+.carousel-item img {
     width: 100%;
     max-height: 700px;
     -webkit-user-drag: none;
     object-fit: cover;
     border-radius: 20px;
 }
-.carousel-container{
+
+.carousel-container {
     display: flex;
     overflow: hidden;
 }
+
 .btn-prev {
     position: relative;
     margin-top: 10px;
@@ -40,4 +43,14 @@
     font-size: 30px;
     border: 0;
     padding-top: 10px;
+}
+
+@media only screen and (max-width: 640px) {
+    .btn-prev {
+        display: none;
+    }
+
+    .btn-next {
+        display: none;
+    }
 }

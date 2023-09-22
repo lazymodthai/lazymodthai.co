@@ -1,10 +1,32 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../css/TopCarousel.css";
 import CarouselItem from "./CarouselItem";
 import { useSpringCarousel } from "react-spring-carousel";
 import {BsArrowBarLeft,BsArrowBarRight} from 'react-icons/bs'
 
 function TopCarousel() {
+  const [itemCount, setItemCount] = useState(5)
+  const [windowSize, setWindowSize] = useState(getWindowSize());
+
+  useEffect(() => {
+    function handleWindowResize() {
+      setWindowSize(getWindowSize());
+    }
+
+    window.addEventListener('resize', handleWindowResize);
+
+    return () => {
+      window.removeEventListener('resize', handleWindowResize);
+    };
+  }, []);
+  useEffect(()=>{
+    if(windowSize.innerWidth <= 640){
+      setItemCount(1)
+    }else if(windowSize.innerWidth <= 1150){
+      setItemCount(3)
+    }
+    else setItemCount(5)
+  },[windowSize])
   const mockedItems = [
     {
       id: 1,
@@ -34,7 +56,7 @@ function TopCarousel() {
   ];
   const { carouselFragment, slideToPrevItem, slideToNextItem } =
     useSpringCarousel({
-      itemsPerSlide: 5,
+      itemsPerSlide: itemCount,
       withLoop: true,
       items: mockedItems.map((i) => ({
         id: i.id,
@@ -50,5 +72,8 @@ function TopCarousel() {
     </div>
   );
 }
-
+function getWindowSize() {
+  const {innerWidth, innerHeight} = window;
+  return {innerWidth, innerHeight};
+}
 export default TopCarousel;
