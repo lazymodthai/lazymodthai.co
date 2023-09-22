@@ -1,3 +1,9 @@
 .home-container{
     padding-top: 80px;
+    background-color: black;
+    background-image: url("../assets/images/bg_form.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
 }
