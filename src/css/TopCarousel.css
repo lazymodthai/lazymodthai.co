@@ -25,24 +25,26 @@
     position: relative;
     margin-top: 10px;
     z-index: 1;
-    background-color: rgba(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.8);
     color: white;
     height: 700px;
     font-size: 30px;
     border: 0;
     padding-top: 10px;
+    border-radius: 0 20px 20px 0;
 }
 
 .btn-next {
     position: relative;
     margin-top: 10px;
     z-index: 1;
-    background-color: rgba(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.8);
     color: white;
     height: 700px;
     font-size: 30px;
     border: 0;
     padding-top: 10px;
+    border-radius: 20px 0 0 20px;
 }
 
 @media only screen and (max-width: 640px) {
